@@ -1,0 +1,27 @@
+html,
+body {
+  background-color: #fff!important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+p,
+b,
+div,
+input,
+button {
+  font-family: 'Mukta', sans-serif!important;
+}
+button,
+input,
+a {
+  outline: 0!important;
+}
+button {
+  cursor: pointer!important;
+}
