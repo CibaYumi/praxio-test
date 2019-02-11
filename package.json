@@ -1,0 +1,23 @@
+{
+  "name": "praxio-test",
+  "version": "1.0.0",
+  "description": "A test for a front-end developer spot on Praxio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CibaYumi/praxio-test.git"
+  },
+  "author": "cibele.yumi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CibaYumi/praxio-test/issues"
+  },
+  "homepage": "https://github.com/CibaYumi/praxio-test#readme",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "bootstrap": "^4.2.1"
+  }
+}
