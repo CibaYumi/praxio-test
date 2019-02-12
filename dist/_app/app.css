@@ -117,9 +117,6 @@ button {
   margin-bottom: 4vh;
 }
 #login .content .box form .btn_section button.btn_purple {
-  border: 2px solid #7626FF;
-  border-radius: 200px;
-  background-color: #7626FF;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
@@ -160,6 +157,57 @@ button {
     height: 12vh;
     background-size: 1000px;
   }
+}
+
+#home {
+  height: 100vh;
+}
+#home nav.navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  display: block;
+}
+#home nav.navbar .btn_greyBorder {
+  width: 124px;
+  height: 36px;
+  color: #585859;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 15px 0;
+  float: right;
+}
+#home .banner {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  height: 70vh;
+  text-align: center;
+  padding: 0 20px;
+}
+#home .banner svg {
+  width: 200px;
+  height: 70%;
+}
+#home .banner p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: -100px;
+}
+#home .banner button.btn_whiteBorder {
+  width: 210px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#home .cards {
+
 }
 
 
@@ -223,3 +271,20 @@ button {
   transform: scale(.75) translateY(-39px) translateX(-60px);
 
 } */
+
+/* =============== BUTTONS ============== */
+.btn_greyBorder {
+  border-radius: 200px;
+  border: 2px solid #EAEAEC;
+  background-color: transparent;
+}
+.btn_purple {
+  border-radius: 200px;
+  border: 2px solid #7626FF;
+  background-color: #7626FF;
+}
+.btn_whiteBorder {
+  border-radius: 200px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+}
