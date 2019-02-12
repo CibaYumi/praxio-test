@@ -1,4 +1,4 @@
 (function(){
   'use strict';
-  angular.module('praxioTest', [])
+  angular.module('FrontTest', ['ngRoute'])
 })();

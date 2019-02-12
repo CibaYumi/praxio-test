@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('praxioTest').config(function ($routeProvider) {
+  angular.module('FrontTest').config(function ($routeProvider) {
     $routeProvider
       .when('/login', {
         templateUrl: 'login.view.html',

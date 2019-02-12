@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('praxioTest').controller('loginCtrl', function ($scope) {
+  angular.module('FrontTest').controller('loginCtrl', function ($scope) {
 
   });
 })();
