@@ -319,6 +319,167 @@ button {
 
 
 
+#home {
+  height: 100vh;
+}
+#home nav.navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 999;
+}
+#home nav.navbar.scrollBarAnimation {
+  background-color: #fff;
+}
+#home nav.navbar.scrollBarAnimation svg {
+  width: 50px;
+}
+#home nav.navbar.scrollBarAnimation button {
+  margin: 10px 0;
+}
+#home nav.navbar .btn_greyBorder {
+  width: 124px;
+  height: 36px;
+  color: #585859;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 15px 0;
+  float: right;
+}
+#home .banner {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 50px;
+  height: 70vh;
+  text-align: center;
+  padding: 0 20px;
+}
+#home .banner svg {
+  width: 200px;
+  height: 70%;
+}
+#home .banner p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: -100px;
+}
+#home .banner button.btn_whiteBorder {
+  width: 210px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#home section.cards {
+  position: relative;
+  margin-top: -55px;
+  margin-bottom: 10vh;
+}
+#home section.cards .container .card-deck .card {
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+#home section.cards .container .card-deck .card .card-body {
+  background-image: url('../../assets/imgs/bottom-card.svg');
+  background-position: center 340px;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+#home section.cards .container .card-deck .card .card-body.card_left {
+  background-position: 145px 190px;
+}
+#home section.cards .container .card-deck .card .card-body.card_right {
+  background-position: -395px 190px;
+}
+#home section.cards .container .card-deck .card .card-body .img_section {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  position: relative;
+  text-align: center;
+  height: 160px;
+}
+#home section.cards .container .card-deck .card .card-body .img_section.active {
+  background-size: 175px;
+  height: 230px;
+}
+#home section.cards .container .card-deck .card .card-body .img_section svg {
+  height: 100%;
+}
+#home section.cards .container .card-deck .card .card-body button {
+  width: 212px;
+  height: 45px;
+}
+#home section.cards .container .card-deck .card .card-body button.btn_greyBorder {
+  color: #585859;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#home section.cards .container .card-deck .card .card-body button.btn_purple {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#home footer {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-color: white;
+  position: relative;
+  bottom: 0vh;
+  width: 100%;
+  padding: 3rem 0 1rem;
+}
+#home footer .container {
+  text-align: center;
+}
+#home footer .container .justify-content-start {
+  padding-bottom: 3rem;
+}
+#home footer .container .row ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+#home footer .container .row ul li {
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  z-index: 999;
+  padding: 5px 15px;
+}
+#home footer .container small {
+  color: #000;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 426px) {
+  #home .banner {
+    background-size: 650px;
+    top: 0;
+    height: 85vh;
+  }
+  #home .banner svg {
+    width: 240px;
+  }
+  #home section.cards {
+    margin-top: -165px;
+  }
+  #home section.cards .container .card-deck .card {
+    height: 100%;
+  }
+}
 
 
 /* .form-wrapper-outer{
