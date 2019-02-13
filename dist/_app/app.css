@@ -159,56 +159,166 @@ button {
   }
 }
 
-#home {
-  height: 100vh;
+
+
+#register .content .box h2 {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #585859;
 }
-#home nav.navbar {
-  background-color: transparent;
+#register .content .box form .input_group {
   width: 100%;
-  position: fixed;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #C2C2C2;
+  padding: 5px 10px;
+  margin-bottom: 2vh;
+}
+#register .content .box form .input_group label {
+  display: none;
+}
+#register .content .box form .input_group input[type="email"],
+#register .content .box form .input_group input[type="password"],
+#register .content .box form .input_group input[type="tel"],
+#register .content .box form .input_group input[type="number"],
+#register .content .box form .input_group input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #fff;
+}
+#register .content .box form .input_group input::placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 1;
+}
+#register .content .box form .input_group input:-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#register .content .box form .input_group input::-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#register .content .box form .input_group .pass_section input {
+  width: 85%;
+}
+#register .content .box form .input_group .pass_section a svg {
+  width: 25px;
+  float: right;
+  padding: 3px 0;
+}
+#register .content .box form .input_group .pass_section a path {
+  fill: #CAD0DC!important;
+}
+#register .content .box form .forgot_pass {
+  width: 100%;
   display: block;
 }
-#home nav.navbar .btn_greyBorder {
-  width: 124px;
-  height: 36px;
-  color: #585859;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 15px 0;
+#register .content .box form .forgot_pass a {
   float: right;
+  margin-top: -1vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  color: #585859;
+  font-size: .9rem;
+  font-weight: 700;
 }
-#home .banner {
-  background-image: url('../../assets/imgs/bg-front.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 50px;
-  height: 70vh;
-  text-align: center;
-  padding: 0 20px;
+#register .content .box form .btn_section {
+  display: block;
+  width: 100%;
+  margin-bottom: 4vh;
 }
-#home .banner svg {
-  width: 200px;
-  height: 70%;
-}
-#home .banner p {
-  font-size: 1rem;
+#register .content .box form .btn_section button.btn_purple {
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
-  color: #fff;
-  margin-top: -100px;
+  width: 100%;
+  height: 60px;
 }
-#home .banner button.btn_whiteBorder {
-  width: 210px;
-  height: 36px;
-  color: #FFFFFF;
+#register .content .box .signup {
+  width: 100%;
+  text-align: center;
+}
+#register .content .box .signup a {
+  color: #0077C5;
   font-size: 1rem;
   font-weight: 400;
 }
-#home .cards {
 
+/* =============== FOOTER ============ */
+#register .footer {
+  background-image: url('../../assets/imgs/bottom-card.svg');
+  background-position: center -72px;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  height: 12vh;
+  background-color: white;
+  position: relative;
 }
+
+@media screen and (min-width: 426px) {
+  #register .content .box {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #register .content .box {
+    width: 700px;
+  }
+  #register .content .box form {
+    display: block;
+  }
+  #register .content .box form .form_left,
+  #register .content .box form .form_right {
+    width: 48%;
+    max-width: 48%;
+    display: inline-block;
+  }
+  #register .content .box form .form_left {
+    float: left;
+  }
+  #register .content .box form .form_right {
+    float: right;
+  }
+  #register .content .box form .btn_section {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  #register .content .box form .btn_section button.btn_purple {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #register .content .box {
+    width: 1000px;
+  }
+  #register .content .box form {
+    display: block;
+  }
+  #register .content .box form .minor_inputs .input_group {
+    display: inline-block;
+    width: 48%;
+  }
+  #register .content .box form .minor_inputs .input_group.phone,
+  #register .content .box form .minor_inputs .input_group.neighborhood {
+    float: right;
+  }
+  #register .content .box form .minor_inputs .input_group.cep {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+
+
 
 
 /* .form-wrapper-outer{
@@ -276,7 +386,7 @@ button {
 .btn_greyBorder {
   border-radius: 200px;
   border: 2px solid #EAEAEC;
-  background-color: transparent;
+  background-color: #fff;
 }
 .btn_purple {
   border-radius: 200px;
