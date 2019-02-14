@@ -22,6 +22,9 @@ PS2: Caso não tenha o http-server instalado na sua máquina e ainda queira roda
 3. Você também encontrará interações nos links de "Quem somos" e "Contato";
 4. Também temos um carousel nos cards da home. Experimente clicar no próximo ou no anterior;
 5. Ah! Experimente inserir um CEP válido na página de cadastro...
+6. Ahh! E também convido vocês a verem como ficaram as telas na versão mobile.
+
+PS3:Eu acabei optando por fazer o projeto em AngularJS porque eu não teria tempo hábil para aprender o Angular para utilizá-lo, então preferi escolher uma tecnologia mais confortável.
 
 Quando terminar, peço a gentileza de me passar um feedback sobre o projeto em si e sobre o meu código.
 
