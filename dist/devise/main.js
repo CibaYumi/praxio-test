@@ -1,14 +1,18 @@
 (function(){
   'use strict';
-  angular.module('FrontTest').config(function ($routeProvider) {
+  angular.module('FrontTest').config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/login', {
-        templateUrl: 'login.view.html',
+        templateUrl: './dist/devise/login.view.html',
         controller: 'loginCtrl'
       })
       .when('/register', {
-        templateUrl: 'register.view.html',
+        templateUrl: './dist/devise/register.view.html',
         controller: 'registerCtrl'
-      });
+      }).otherwise({
+				templateUrl: './dist/devise/login.view.html',
+				controller: 'loginCtrl'
+			});
+			$locationProvider.html5Mode(true);
   });
 })();
