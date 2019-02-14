@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('FrontTest', ['ngRoute'])
+  angular.module('FrontTest', ['ngRoute', 'ui.mask'])
     .config(function ($routeProvider, $locationProvider) {
       $routeProvider.otherwise({
         templateUrl: './dist/devise/login.view.html',

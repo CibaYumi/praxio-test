@@ -25,11 +25,11 @@
           <div class="minor_inputs">
             <div class="input_group">
               <label for="">CPF*</label>
-              <input type="tel" name="userCpf" placeholder="CPF" required ng-model="newUser.cpfcnpj">
+              <input type="tel" name="userCpf" required ng-model="newUser.cpfcnpj" ui-mask="999.999.999-99">
             </div>
             <div class="input_group phone">
               <label for="">Telefone*</label>
-              <input type="tel" name="userPhone" placeholder="Telefone" required ng-model="newUser.telefone">
+              <input type="tel" name="userPhone" required ng-model="newUser.telefone" ui-mask="(99) 9 9999-9999">
             </div>
           </div>
           <div class="input_group">
@@ -56,7 +56,7 @@
           <div class="minor_inputs">
             <div class="input_group cep">
               <label for="">CEP*</label>
-              <input type="tel" name="userCep" placeholder="CEP" required ng-model="newUser.cep">
+              <input type="tel" name="userCep" required ng-model="newUser.cep" ui-mask="99 999-999" ng-change="findAddress()">
             </div>
           </div>
           <div class="input_group">
