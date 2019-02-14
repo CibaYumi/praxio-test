@@ -63,6 +63,7 @@
 #home section.cards {
   padding: 0 20px;
   margin-bottom: 10vh;
+  margin-top: -35px;
 }
 #home section.cards .container .card-carousel {
   display: flex;
@@ -294,23 +295,14 @@
     width: 240px;
   }
   #home section.cards {
-    margin-top: -165px;
+    margin-top: -190px;
   }
 }
 @media screen and (min-width: 768px) {
-  #home footer {
-    background-position: 350px 0;
-    padding-top: 7rem;
-  }
-  #home footer .container .row ul li {
-    text-align: left;
-  }
-  #home footer .container .justify-content-start {
-    padding-bottom: 7rem;
-  }
-  #home footer .container small {
-    color: #000;
-    font-weight: 400;
+  #home .banner {
+    background-size: 930px;
+    height: 100vh;
+    background-position: center -106px;
   }
   #home section.cards .container .card-carousel .my-card {
     background-position: center 360px;
@@ -343,6 +335,20 @@
   }
   #home section.cards .container .card-carousel .my-card button {
     width: 212px;
+  }
+  #home footer {
+    background-position: 350px 0;
+    padding-top: 7rem;
+  }
+  #home footer .container .row ul li {
+    text-align: left;
+  }
+  #home footer .container .justify-content-start {
+    padding-bottom: 7rem;
+  }
+  #home footer .container small {
+    color: #000;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 860px) {
