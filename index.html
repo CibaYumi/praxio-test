@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="SSO"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" ng-app="SSO"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" ng-app="SSO"><![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="FrontTest"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" ng-app="FrontTest"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" ng-app="FrontTest"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html ng-app="FrontTest"><!--<![endif]-->
   <head>
@@ -9,13 +9,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="A test for a front-end developer spot">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,NPM,front-end">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,Angular,NPM,front-end">
     <meta name="author" content="Cibele Yumi">
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#7626FF">
     <meta name="apple-mobile-web-app-status-bar-style" content="#7626FF">
     <meta name="msapplication-navbutton-color" content="#7626FF">
-    <title ng-bind="title">Acessar conta</title>
+    <title ng-bind="title">Teste de Login</title>
 
     <!-- FAVICON -->
     <!--[if IE]><link rel="shortcut icon" href="assets/imgs/favicon.ico"><![endif]-->
@@ -41,71 +41,33 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/_app/app.css" />
+    <link rel="stylesheet" href="dist/devise/main.css" />
+    <link rel="stylesheet" href="dist/home/main.css" />
     <style media="screen">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display: none !important;}</style>
   </head>
   <body ng-controller="App">
-    <!-- <view ng-cloak>
+    <view ng-cloak>
       <main role="main">
         <ng-view></ng-view>
       </main>
-    </view> -->
-    <div id="home">
-      <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="63.417" viewBox="0 0 64 63.417">
-            <g id="Group_3999" data-name="Group 3999" transform="translate(-10.802 -5.375)">
-              <g id="Group_3985" data-name="Group 3985" transform="translate(6.959 5.96)">
-                <path id="Path_4424" data-name="Path 4424" d="M4.058,10.737c1.578-2.4,10.9-15.626,21.5-8.8S50.482,14.4,49.189,18.852s.56,21.09-8.47,25.255-21.5,9.223-27.8,5.959S-.547,39.679.033,29.579,2.48,13.138,4.058,10.737Z" transform="matrix(0.017, 1, -1, 0.017, 61.015, 6.018)" fill="#7626ff"/>
-                <path id="Path_4423" data-name="Path 4423" d="M4.2,10.614C5.781,8.258,15.119-4.72,25.527,1.826s24.511,11.9,23.192,16.251.353,20.545-8.609,24.692-21.332,9.2-27.529,6.081S-.624,38.861.044,29.013,2.618,12.969,4.2,10.614Z" transform="matrix(0.358, 0.934, -0.934, 0.358, 50.353, -0.585)" fill="#7626ff" opacity="0.33"/>
-                <path id="Path_4422" data-name="Path 4422" d="M356.373,320.537s1.349,8.767,0,10.453-3.709.674-3.709.674-1.012.337,0-4.046-2.36-11.8-2.36-11.8-3.709,2.36-4.721,1.349,1.349-10.79,12.476-13.15c7.233-1.534,7.627.778,7.017,2.585a5.407,5.407,0,0,1-1.76,2.465,49.332,49.332,0,0,1-6.29,4.385,4.967,4.967,0,0,0-1.574,1.334c-.553.731-.848,1.567.922,1.37,3.035-.337,8.767-.337,7.081,1.349S359.745,319.862,356.373,320.537Z" transform="translate(-319.007 -286.91)" fill="#fff"/>
-              </g>
-            </g>
-          </svg>
-        </a>
-        <button class="btn btn_greyBorder">Logout</button>
-      </nav>
-      <div class="clearfix"></div>
-      <div class="banner">
-        <svg xmlns="http://www.w3.org/2000/svg" width="398.996" height="242.523" viewBox="0 0 398.996 242.523">
-          <g id="Group_4003" data-name="Group 4003" transform="translate(-345.371 -303.514)">
-            <path id="Path_4412" data-name="Path 4412" d="M399.339,387.018s6.616,43,0,51.274-18.194,3.308-18.194,3.308-4.962,1.654,0-19.848-11.578-57.89-11.578-57.89-18.194,11.578-23.156,6.616,6.616-52.928,61.2-64.506c35.478-7.526,37.413,3.816,34.421,12.678a26.522,26.522,0,0,1-8.634,12.091c-6.386,5.137-19.365,15.17-30.857,21.51a24.361,24.361,0,0,0-7.723,6.545c-2.714,3.584-4.161,7.684,4.522,6.72,14.886-1.654,43-1.654,34.734,6.616S415.879,383.71,399.339,387.018Z" transform="translate(0)" fill="#fff"/>
-            <path id="Union_1" data-name="Union 1" d="M-3599.28-28.451c6.616-6.616,14.578,10.615,14.578,10.615,6.536-35.509,30.079-25.5,30.079-25.5s18.612,8.737-2.962,21.5a52.9,52.9,0,0,0-17.391,15.858,56.8,56.8,0,0,0-5.541,19.611c1.2,71.835,12.662,118.352,12.662,118.352,1.655-4.962,8.616-8.615,8.616-8.615s26.118-6.27-8.616,33.426c-2.817,3.22-5.382,4.7-7.72,4.7C-3602.071,161.479-3599.28-28.451-3599.28-28.451Z" transform="translate(4046.585 384.044)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
-            <path id="Path_4414" data-name="Path 4414" d="M512.639,357.6a33.114,33.114,0,0,0-22.921-22.956c-10-2.683-22.2-1.22-30.978,15.367,0,0-5.854-9.757-11.708,5.854s-1.951,87.813,42.931,64.4C520.515,404.32,517.609,374.815,512.639,357.6Zm-27.378,29.417a13.948,13.948,0,0,1-6.176,8.436c-4.506,2.71-10.938,3.134-14.491-12.268-5.854-25.368,3.9-21.465,3.9-21.465S493.812,354.487,485.261,387.017Z" transform="translate(64.041 5.826)" fill="#fff"/>
-            <path id="Path_4415" data-name="Path 4415" d="M515.586,350.283s-21.218-19.289-17.36,1.929,3.858,50.152,3.858,50.152,0,27.005,13.5,21.218,3.858-36.65,3.858-36.65,19.289,42.437,34.721,32.792,11.574-71.371-3.858-82.944-19.289,7.716-19.289,7.716-3.858,9.645,7.716,36.65C538.733,381.146,529.089,361.857,515.586,350.283Z" transform="translate(91.22 6.323)" fill="#fff"/>
-            <path id="Path_4416" data-name="Path 4416" d="M555.881,361.163s-19.848,180.286,36.388,162.092c0,0,28.5-4.962,21.886-24.81,0,0-6.616-8.27-9.924,1.654,0,0-3.308,13.232-8.27,4.962s-34.734-64.506-18.194-143.9c0,0,11.578,1.654,16.54-4.962s-3.308-13.232-13.232-4.962c0,0,0-16.54,11.578-29.772,0,0,1.654-3.308-3.308-3.308s-13.232-11.578-13.232-11.578-11.962-3.308-11.962,0-6.616,33.08-6.616,39.7c0,0-23.156-4.962-21.5,8.27S552.574,362.817,555.881,361.163Z" transform="translate(129.215 1.045)" fill="#fff"/>
-            <path id="Path_4417" data-name="Path 4417" d="M424.967,387.968s-40.319.817-34.873,15.923,29.742,4.98,35.032,2.081" transform="translate(28.918 55.233)" fill="#fff"/>
-            <path id="Path_4418" data-name="Path 4418" d="M412.867,408.419s25.907-1.791,35.118-13.735-10.7-18.955-30.4-2.638" transform="translate(44.142 51.637)" fill="#fff"/>
-            <path id="Union_2" data-name="Union 2" d="M-3598.8-4.857c5.321-39.137,50.551-52.835,66.514-25.439C-3520.9-10.755-3550.12.821-3567.812,5.852l.034.01s-8.113,2.052-10.917,7.773q-.127.41-.271.86c-4.871,15.176,23.723,17.254,26.026,12.169a9.121,9.121,0,0,1,4.677-4.4c2.692-1.246,9.1-1.133,9.1-1.133s25.441,6.864-.012,19.345a47.677,47.677,0,0,1-20.991,5.1C-3583.868,45.578-3602.938,25.592-3598.8-4.857Zm32.978-17.3a17.5,17.5,0,0,0-11.153,6.524c-2.057,2.871-3.211,6.9.785,11.309,0,0,29.061-2.851,23.248-12.825a10.469,10.469,0,0,0-9.635-5.315A18.312,18.312,0,0,0-3565.82-22.162Z" transform="translate(4098.788 491.72)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
-            <path id="Path_4420" data-name="Path 4420" d="M518.042,420.339s61.2-13.232,43-28.118S480,393.875,480,420.339c0,23,26.232,17.266,33.1,15.371a34.479,34.479,0,0,1,4.649-.938c7.167-.954,24.423-2.479,21.791,5.415-3.308,9.924-41.35,9.924-41.35,9.924s-19.848-3.308-16.54,13.232,51.274,8.27,51.274,8.27,47.966-11.578,38.042-31.426S534.582,412.068,518.042,420.339Z" transform="translate(97.047 56.341)" fill="#fff"/>
-            <path id="Path_4421" data-name="Path 4421" d="M501.023,416.535c5.614-5.614,14.775-7.65,17.43-8.139-.642.007-1.278.026-1.91.065,7.154-2.033,16.118-4.954,23.072-8.452C497.8,400.3,501.023,416.535,501.023,416.535Z" transform="translate(113.758 65.107)" opacity="0.05"/>
-          </g>
-        </svg>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. <br/> Casamentiss faiz malandris se pirulitá.</p>
-        <button class="btn_whiteBorder">Saiba mais</button>
-      </div>
-      <div class="cards">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
-      <footer>
+    </view>
 
-      </footer>
-    </div>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+    <!-- SCRIPTS AND LIBS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="dist/_app/app.ctrl.js"></script>
+    <script src="node_modules/jstorage/jstorage.min.js"></script>
     <script src="dist/_configs/app.js"></script>
+    <script src="dist/_services/authenticate.service.js"></script>
+    <script src="dist/_services/app.service.js"></script>
+    <script src="dist/_app/app.ctrl.js"></script>
     <script src="dist/_app/main.js"></script>
+    <script src="dist/home/home.ctrl.js"></script>
+    <script src="dist/devise/login.ctrl.js"></script>
+    <script src="dist/devise/register.ctrl.js"></script>
+    <script src="dist/devise/main.js"></script>
+    <script src="dist/home/main.js"></script>
   </body>
 </html>
