@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('FrontTest').controller('homeCtrl', function ($scope, $location, $rootScope, App, Auth) {
+  angular.module('FrontTest').controller('homeCtrl', function ($scope, $location, App, Auth) {
 
     if(!Auth.session.get()) $location.path('/login');
 

@@ -127,7 +127,8 @@ button {
   position: relative;
   overflow: hidden;
 }
-/* ======================= LOAD ===================== */
+
+/* ==================== LOAD ================== */
 load{
   background-image: url('../../assets/imgs/load.gif');
   background-repeat: no-repeat;
