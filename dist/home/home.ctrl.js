@@ -1,18 +1,20 @@
 (function(){
   'use strict';
-  angular.module('FrontTest').controller('homeCtrl', function ($scope, $location, Auth) {
+  angular.module('FrontTest').controller('homeCtrl', function ($scope, $location, $rootScope, App, Auth) {
 
     if(!Auth.session.get()) $location.path('/login');
 
     $scope.logout = function () {
+      App.load.start('Deslogando...');
       try {
         Auth.logout();
+        App.load.stop();
         $location.path('/login');
       } catch (e) {
-        alert('Erro ao deslogar!');
+        App.load.stop('Erro ao efetuar o logout!');
+        // alert('Erro ao deslogar!');
       }
     };
-
 
   });
 })();
