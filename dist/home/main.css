@@ -1,0 +1,372 @@
+@import url('../_app/app.css');
+
+/* ===================== HOME =================== */
+#home {
+  height: 100vh;
+  width: 100vw;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  /* overflow-x: hidden; */
+}
+#home nav.navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: 999;
+  transition: ease 0.3s;
+}
+#home nav.navbar svg {
+  transition: ease 0.3s;
+}
+#home nav.navbar .btn_greyBorder {
+  width: 124px;
+  height: 36px;
+  color: #585859;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 15px 0;
+  float: right;
+  transition: ease 0.3s;
+}
+#home .banner {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 50px;
+  height: 70vh;
+  text-align: center;
+  padding: 0 20px;
+}
+#home .banner svg {
+  width: 200px;
+  height: 70%;
+}
+#home .banner p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: -100px;
+}
+#home .banner button.btn_whiteBorder {
+  width: 210px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#home section.cards {
+  padding: 0 20px;
+  margin-bottom: 10vh;
+}
+#home section.cards .container .card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#home section.cards .container .card-carousel .my-card {
+  background: url('../../assets/imgs/bottom-card.svg');
+  background-position: center 305px;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  position: relative;
+  height: 410px;
+  width: 200px;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  cursor: inherit;
+  pointer-events: none;
+  transition: .5s;
+  opacity: 1;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.25rem;
+}
+#home section.cards .container .card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -3rem;
+  left: 0;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+#home section.cards .container .card-carousel .my-card:nth-child(0):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#home section.cards .container .card-carousel .my-card:nth-child(1):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#home section.cards .container .card-carousel .my-card:nth-child(2):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#home section.cards .container .card-carousel .my-card:nth-child(3):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#home section.cards .container .card-carousel .my-card:nth-child(4):before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#home section.cards .container .card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(-1rem) translateX(0);
+  transform: scale(1) translateY(-1rem) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: .5s;
+}
+#home section.cards .container .card-carousel .my-card.active:hover {
+  -webkit-transform: scale(1.04) translateY(-1rem) translateX(0)!important;
+  transform: scale(1.04) translateY(-1rem) translateX(0)!important;
+  transition: .5s;
+}
+#home section.cards .container .card-carousel .my-card.prev,
+#home section.cards .container .card-carousel .my-card.next {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  transition: .5s;
+}
+#home section.cards .container .card-carousel .my-card.prev:hover {
+  -webkit-transform: scale(0.84) translateY(-1rem) translateX(3rem);
+  transform: scale(0.84) translateY(-1rem) translateX(3rem);
+}
+#home section.cards .container .card-carousel .my-card.next:hover {
+  -webkit-transform: scale(0.84) translateY(-1rem) translateX(-3rem);
+  transform: scale(0.84) translateY(-1rem) translateX(-3rem);
+}
+#home section.cards .container .card-carousel .my-card.prev {
+  background-position: 8px 225px;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(9rem);
+  transform: scale(0.8) translateY(-1rem) translateX(9rem);
+}
+#home section.cards .container .card-carousel .my-card.next {
+  background-position: -415px 225px;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(-9rem);
+  transform: scale(0.8) translateY(-1rem) translateX(-9rem);
+}
+#home section.cards .container .card-carousel .my-card h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .75rem;
+  color: #733FFF;
+}
+#home section.cards .container .card-carousel .my-card .img_section {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  position: relative;
+  text-align: center;
+  height: 130px;
+}
+#home section.cards .container .card-carousel .my-card.active .img_section {
+  background-size: 120px;
+  height: 150px;
+}
+#home section.cards .container .card-carousel .my-card .img_section svg {
+  height: 100%;
+}
+#home section.cards .container .card-carousel .my-card p {
+  margin-bottom: .8rem;
+  font-size: .9rem;
+}
+#home section.cards .container .card-carousel .my-card button {
+  width: 140px;
+  height: 45px;
+}
+#home section.cards .container .card-carousel .my-card .img_section button.btn_greyBorder {
+  color: #585859;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#home section.cards .container .card-carousel .my-card.active button.btn_greyBorder {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 200px;
+  border: 2px solid #7626FF;
+  background-color: #7626FF;
+}
+#home section.cards .container .card-carousel .my-card.active button.btn_greyBorder:hover,
+#home section.cards .container .card-carousel .my-card.active button.btn_greyBorder:focus,
+#home section.cards .container .card-carousel .my-card.active button.btn_greyBorder:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#home footer {
+  background-image: url('../../assets/imgs/bg-front.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-color: white;
+  position: relative;
+  bottom: 0vh;
+  width: 100%;
+  padding: 3rem 20px 1rem;
+}
+#home footer .container {
+  text-align: center;
+}
+#home footer .container .justify-content-start {
+  padding-bottom: 3rem;
+}
+#home footer .container .row ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+#home footer .container .row ul li {
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  z-index: 999;
+  padding: 5px 15px;
+}
+#home footer .container .row ul li a {
+  color: #000;
+}
+#home footer .container .row ul li a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+#home footer .container small {
+  color: #000;
+  font-weight: 400;
+}
+@media screen and (min-width: 426px) {
+  #home .banner {
+    background-size: 650px;
+    top: 0;
+    height: 85vh;
+  }
+  #home .banner svg {
+    width: 240px;
+  }
+  #home section.cards {
+    margin-top: -165px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #home footer {
+    background-position: 350px 0;
+    padding-top: 7rem;
+  }
+  #home footer .container .row ul li {
+    text-align: left;
+  }
+  #home footer .container .justify-content-start {
+    padding-bottom: 7rem;
+  }
+  #home footer .container small {
+    color: #000;
+    font-weight: 400;
+  }
+  #home section.cards .container .card-carousel .my-card {
+    background-position: center 360px;
+    height: 480px;
+    width: 350px;
+  }
+  #home section.cards .container .card-carousel .my-card.prev {
+    background-position: 165px 290px;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(5rem);
+    transform: scale(0.8) translateY(-1rem) translateX(5rem);
+  }
+  #home section.cards .container .card-carousel .my-card.next {
+    background-position: -340px 290px;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(-5rem);
+    transform: scale(0.8) translateY(-1rem) translateX(-5rem);
+  }
+  #home section.cards .container .card-carousel .my-card h5 {
+    font-size: 1.3rem;
+  }
+  #home section.cards .container .card-carousel .my-card.active .img_section {
+    background-size: 175px;
+    height: 230px;
+  }
+  #home section.cards .container .card-carousel .my-card .img_section {
+    height: 185px;
+  }
+  #home section.cards .container .card-carousel .my-card p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  #home section.cards .container .card-carousel .my-card button {
+    width: 212px;
+  }
+}
+@media screen and (min-width: 860px) {
+  #home footer {
+    background-position: 470px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home footer {
+    background-position: 660px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #home footer {
+    background-position: 895px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #home footer {
+    background-position: 1048px 0;
+  }
+}
+@media screen and (min-width: 1960px) {
+  #home footer {
+    background-position: center 190px;
+  }
+}

@@ -1,0 +1,289 @@
+@import url('../_app/app.css');
+
+/* ===================== LOGIN =================== */
+#login {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+#login .content .box h2 {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #585859;
+}
+#login .content .box form .input_group {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #C2C2C2;
+  padding: 5px 10px;
+  margin-bottom: 2vh;
+}
+#login .content .box form .input_group label {
+  display: none;
+}
+#login .content .box form .input_group input[type="email"],
+#login .content .box form .input_group input[type="password"],
+#login .content .box form .input_group input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #fff;
+}
+#login .content .box form .input_group input::placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 1;
+}
+#login .content .box form .input_group input:-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#login .content .box form .input_group input::-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#login .content .box form .input_group .pass_section input {
+  width: 85%;
+}
+#login .content .box form .input_group .pass_section a svg {
+  width: 25px;
+  float: right;
+  padding: 3px 0;
+}
+#login .content .box form .input_group .pass_section a path {
+  fill: #CAD0DC!important;
+}
+#login .content .box form .forgot_pass {
+  width: 100%;
+  display: block;
+}
+#login .content .box form .forgot_pass a {
+  float: right;
+  margin-top: -1vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  color: #585859;
+  font-size: .9rem;
+  font-weight: 700;
+}
+#login .content .box form .btn_section {
+  display: block;
+  width: 100%;
+  margin-bottom: 4vh;
+}
+#login .content .box form .btn_section button.btn_purple {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+#login .content .box .signup {
+  width: 100%;
+  text-align: center;
+}
+#login .content .box .signup a {
+  color: #0077C5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#login .footer {
+  background-image: url('../../assets/imgs/bottom-card.svg');
+  background-position: center -40px;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  height: 12%;
+  margin: 0px auto;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 426px) {
+  #login .content .box {
+    width: 370px;
+  }
+  #login .footer {
+    background-position: center -72px;
+    height: 12vh;
+    background-size: 1000px;
+  }
+}
+
+
+/* ===================== REGISTER =================== */
+#register {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+#register .content .box h2 {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #585859;
+}
+#register .content .box form .input_group {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #C2C2C2;
+  padding: 5px 10px;
+  margin-bottom: 2vh;
+}
+#register .content .box form .input_group label {
+  display: none;
+}
+#register .content .box form .input_group input[type="email"],
+#register .content .box form .input_group input[type="password"],
+#register .content .box form .input_group input[type="tel"],
+#register .content .box form .input_group input[type="number"],
+#register .content .box form .input_group input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: #fff;
+}
+#register .content .box form .input_group input::placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 1;
+}
+#register .content .box form .input_group input:-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#register .content .box form .input_group input::-ms-input-placeholder {
+  color: #CAD0DC;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#register .content .box form .input_group .pass_section input {
+  width: 85%;
+}
+#register .content .box form .input_group .pass_section a svg {
+  width: 25px;
+  float: right;
+  padding: 3px 0;
+}
+#register .content .box form .input_group .pass_section a path {
+  fill: #CAD0DC!important;
+}
+#register .content .box form .forgot_pass {
+  width: 100%;
+  display: block;
+}
+#register .content .box form .forgot_pass a {
+  float: right;
+  margin-top: -1vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  color: #585859;
+  font-size: .9rem;
+  font-weight: 700;
+}
+#register .content .box form .btn_section {
+  display: block;
+  width: 100%;
+  margin-bottom: 4vh;
+}
+#register .content .box form .btn_section button.btn_purple {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+#register .content .box .signup {
+  width: 100%;
+  text-align: center;
+}
+#register .content .box .signup a {
+  color: #0077C5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#register .footer {
+  background-image: url('../../assets/imgs/bottom-card.svg');
+  background-position: center -72px;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  height: 13vh;
+  background-color: white;
+  position: relative;
+}
+@media screen and (min-width: 426px) {
+  #register .content .box {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 769px) {
+  #register .content .box {
+    width: 700px;
+  }
+  #register .content .box form {
+    display: block;
+  }
+  #register .content .box form .form_left,
+  #register .content .box form .form_right {
+    width: 48%;
+    max-width: 48%;
+    display: inline-block;
+  }
+  #register .content .box form .form_left {
+    float: left;
+  }
+  #register .content .box form .form_right {
+    float: right;
+  }
+  #register .content .box form .btn_section {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  #register .content .box form .btn_section button.btn_purple {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #register .content .box {
+    width: 1000px;
+  }
+  #register .content .box form {
+    display: block;
+  }
+  #register .content .box form .minor_inputs .input_group {
+    display: inline-block;
+    width: 48%;
+  }
+  #register .content .box form .minor_inputs .input_group.phone,
+  #register .content .box form .minor_inputs .input_group.neighborhood {
+    float: right;
+  }
+  #register .content .box form .minor_inputs .input_group.cep {
+    display: inline-block;
+    width: 50%;
+  }
+}
