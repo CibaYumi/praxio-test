@@ -85,7 +85,7 @@
       <div class="row justify-content-start">
         <ul class="col-12 col-md-3 ol-lg-4">
           <li class="col-lg-12">
-            <a href="/home">Quem Somos</a>
+            <a href="/home" data-toggle="modal" data-target="#whoAmI">Quem Somos</a>
           </li>
           <li class="col-lg-12">
             <a href="/home">Como Funciona</a>
@@ -94,7 +94,7 @@
             <a href="/home">FAQ's</a>
           </li>
           <li class="col-lg-12">
-            <a href="/home">Contato</a>
+            <a href="/home" data-toggle="modal" data-target="#contact">Contato</a>
           </li>
         </ul>
         <ul class="col-12 col-md-3 col-lg-4">
@@ -115,4 +115,47 @@
       <small>Yumi © 2019. Todos os direitos reservados.</small>
     </div>
   </footer>
+</div>
+
+<!-- MODALS -->
+<div class="modal fade" id="whoAmI" tabindex="-1" role="dialog" aria-labelledby="whoAmITitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="whoAmITitle">Quem sou eu?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Sou uma programadora front-end com dois anos de experiência em desenvolvimento web. Trabalhei em projetos de construção de um SSO e na construção de nova versão de uma plataforma SaaS utilizando HTML5, CSS3 (Bootstrap, SASS), JavaScript (Angular), comunicação com APIs RESTful, Gulp, NPM, Bower, versionamento com Git e utilização de repositórios. Dedicada e organizada, busco novas ferramentas e estudos para aperfeiçoar meus conhecimentos e agregar valor onde estou trabalhando.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn_purple" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactTitle">Contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Email</h5>
+        <p><a href="mailto:contato@cibeleyumi.com.br">contato@cibeleyumi.com.br</a></p>
+        <h5>Celular</h5>
+        <p>+55 11 99659 2053</p>
+        <h5>LinkedIn</h5>
+        <p><a href="https://www.linkedin.com/in/cibeleyumi/" target="_blank">linkedin.com/cibeleyumi</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn_purple" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
