@@ -119,6 +119,9 @@ input,
 a {
   outline: 0!important;
 }
+a {
+  cursor: pointer!important;
+}
 button {
   cursor: pointer!important;
   position: relative;
@@ -140,18 +143,6 @@ load{
 }
 _load_{
   overflow: hidden !important;
-}
-
-/* ======= COMMONS STYLES FROM LOGIN AND REGISTER VIEW ======= */
-.content {
-  min-height: 77vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-}
-.content .box {
-  width: 100%;
 }
 
 /* ================= SCROLL ANIMATION ON NAVBAR =============== */
@@ -211,8 +202,8 @@ button.btn_purple:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background: rgba(255, 255, 255, .5);
   opacity: 0;
   border-radius: 100%;
