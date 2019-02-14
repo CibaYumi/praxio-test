@@ -20,7 +20,8 @@ PS2: Caso não tenha o http-server instalado na sua máquina e ainda queira roda
 1. Temos interações em hover nos cards da home e em todos os botões;
 2. Você pode encontrar interações de click nos botões do projeto, como o botão de entrar, cadastrar e logout, nos links de login e cadastro quem se encontram na home, e no ícone de mostrar/esconder no campo de senha;
 3. Você também encontrará interações nos links de "Quem somos" e "Contato";
-4. Também temos um carousel nos cards da home. Experimente clicar no próximo ou no anterior.
+4. Também temos um carousel nos cards da home. Experimente clicar no próximo ou no anterior;
+5. Ah! Experimente inserir um CEP válido na página de cadastro...
 
 Quando terminar, peço a gentileza de me passar um feedback sobre o projeto em si e sobre o meu código.
 
